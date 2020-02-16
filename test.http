@@ -1,0 +1,18 @@
+GET https://my-json-server.typicode.com/waog/mirco-oli-todolist/todos
+###
+
+GET https://my-json-server.typicode.com/waog/mirco-oli-todolist/todos/1
+###
+
+POST https://my-json-server.typicode.com/waog/mirco-oli-todolist/todos HTTP/1.1
+content-type: application/json
+
+{
+    "title": "new TODO"
+}
+
+
+GET https://my-json-server.typicode.com/waog/mirco-oli-todolist/users
+###
+
+GET https://my-json-server.typicode.com/waog/mirco-oli-todolist/users/1
