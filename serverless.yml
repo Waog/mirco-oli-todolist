@@ -1,0 +1,20 @@
+# serverless.yml
+
+org: waog1
+app: mirco-oli-todolist
+service: webapp
+
+plugins:
+  - serverless-finch # deploying static folders to s3
+  # - serverless-webpack
+
+provider:
+  name: aws
+  # runtime: nodejs12.x
+  region: eu-central-1
+  stage: prod
+
+custom:
+  client:
+    bucketName: mirco-oli-todolist-webapp
+    distributionFolder: build
